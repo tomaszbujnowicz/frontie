@@ -1,5 +1,5 @@
 {
-  "name": "Frontend Development Starter Kit",
+  "name": "Frontend-Development-Starter-Kit",
   "version": "1.0.0",
   "description": "Frontend Development Starter Kit is a lightweight front-end development starter kit using Gulp for task automation. Based on HTML5 Boilerplate and Bootstrap 4 Grid system enhanced with SASS and Browsersync.",
   "main": "gulpfile.js",
