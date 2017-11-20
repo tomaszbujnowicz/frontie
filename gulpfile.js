@@ -10,7 +10,9 @@ var gulp = require('gulp'),
     reload = browserSync.reload,
     plumber = require('gulp-plumber'),
     runSequence = require('run-sequence'),
-    del = require ('del');
+    del = require ('del'),
+    twig = require('gulp-twig'),
+    foreach = require('gulp-foreach');
 
 // Paths
 var paths = {
@@ -92,6 +94,26 @@ gulp.task('images', function() {
 });
 gulp.task('images-watch',['images'],browserSync.reload)
 
+// Twig
+gulp.task('twig',function(){
+  return gulp.src([
+    paths.src + 'templates/**/*.twig',
+    '!' + paths.src + 'templates/layouts/**/*.twig',
+    '!' + paths.src + 'templates/partials/**/*.twig'
+  ])
+  .pipe(plumber({
+    errorHandler: function (error) {
+      console.log(error.message);
+      this.emit('end');
+  }}))
+  .pipe(foreach(function(stream,file){
+    return stream
+      .pipe(twig({}))
+  }))
+  .pipe(gulp.dest(paths.dist));
+});
+gulp.task('twig-watch',['twig'],browserSync.reload);
+
 // Watch
 gulp.task('watch', function() {
   gulp.watch(paths.src + '*.html', ['html-watch']);
@@ -99,12 +121,13 @@ gulp.task('watch', function() {
   gulp.watch(paths.src + 'sass/**/*.scss', ['css-watch']);
   gulp.watch(paths.src + 'js/main.js', ['js-main-watch']);
   gulp.watch(paths.src + 'js/vendor/**/*.js', ['js-vendor-watch']);
+  gulp.watch(paths.src + 'templates/**/*.twig', ['twig-watch']);
 });
 
 // Build
 gulp.task('build', function (done) {
   runSequence('clean:dist',
-    ['css', 'js-vendor', 'js-main', 'images', 'html'],
+    ['css', 'js-vendor', 'js-main', 'images', 'twig', 'html'],
     done
   )
 })

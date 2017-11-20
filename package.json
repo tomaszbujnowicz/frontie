@@ -38,9 +38,11 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
+    "gulp-foreach": "^0.1.0",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
+    "gulp-twig": "^1.1.1",
     "gulp-uglify": "^3.0.0",
     "run-sequence": "^2.2.0"
   }

@@ -1,6 +1,7 @@
 # Dependency directories
 node_modules
 bower_components
+dist
 
 # Optional npm cache directory
 .npm
