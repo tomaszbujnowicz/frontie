@@ -18,7 +18,8 @@
     "sass",
     "starter kit",
     "html5 boilerplate",
-    "bootstrap grid"
+    "bootstrap grid",
+    "twig.js"
   ],
   "author": {
     "name": "Tomasz Bujnowicz",
