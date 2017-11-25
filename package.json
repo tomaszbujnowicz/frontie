@@ -1,14 +1,15 @@
 {
-  "name": "Frontend-Development-Starter-Kit",
+  "name": "frontie",
   "version": "1.0.0",
-  "description": "Frontend Development Starter Kit is a lightweight front-end development starter kit using Gulp for task automation. Based on HTML5 Boilerplate and Bootstrap 4 Grid system enhanced with SASS and Browsersync.",
+  "description": "Frontend HTML5 Boilerplate. Frontie is a frontend HTML5 boilerplate using Gulp for task automation.
+  Based on HTML5 Boilerplate and Bootstrap 4 Grid system enhanced with Twig.js, SASS, Autoprefixer plus Browsersync.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomaszbujnowicz/Frontend-Development-Starter-Kit.git"
+    "url": "git+https://github.com/tomaszbujnowicz/frontie.git"
   },
   "keywords": [
     "gulp",
@@ -16,7 +17,7 @@
     "browsersync",
     "frontend development",
     "sass",
-    "starter kit",
+    "boilerplate",
     "html5 boilerplate",
     "bootstrap grid",
     "twig.js"
@@ -28,9 +29,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tomaszbujnowicz/Frontend-Development-Starter-Kit/issues"
+    "url": "https://github.com/tomaszbujnowicz/frontie/issues"
   },
-  "homepage": "https://github.com/tomaszbujnowicz/Frontend-Development-Starter-Kit#readme",
+  "homepage": "https://github.com/tomaszbujnowicz/frontie#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "css-clean": "^1.7.1",

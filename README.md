@@ -1,16 +1,43 @@
-# Frontend Development Starter Kit | Gulp | HTML5 Boilerplate | Bootstrap 4 Grid system | Twig.js | Sass | Autoprefixer | Browsersync
+# Frontie - Frontend HTML5 Boilerplate
 
-Frontend Development Starter Kit is a lightweight starter kit using Gulp for task automation. Based on HTML5 Boilerplate and Bootstrap 4 Grid system enhanced with Twig.js, SASS, Autoprefixer plus Browsersync. These tools make it a solid frontend boilerplate to get a new project off the ground.
+Frontie is a frontend HTML5 boilerplate using Gulp for task automation.
+Based on HTML5 Boilerplate and Bootstrap 4 Grid system enhanced with Twig.js, SASS, Autoprefixer plus Browsersync.
+These tools make it a solid frontend boilerplate to get a new project off the ground.
 
 ## Core features
-* [Gulp](http://gulpjs.com/) for task automation
-* [HTML5 Boilerplate](https://html5boilerplate.com/)
+
+* [Gulp](http://gulpjs.com/)
+
+  For task automation
+
+* [HTML5 Boilerplate](https://html5boilerplate.com/)  
+
+  The web’s most popular front-end template
+
 * [Bootstrap 4 Grid System](http://getbootstrap.com/docs/4.0/layout/grid/)
-* [Bootstrap 4 Responsive Breakpoints](http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints/)
-* [Twig.js](https://github.com/twigjs/twig.js) as a templating engine
-* [Sass](http://sass-lang.com/) as a CSS preprocessor
+
+  Powerful mobile-first flexbox grid to build layouts of all shapes and sizes
+
+* [Bootstrap 4 Responsive Breakpoints](http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints)
+
+  Media queries to create sensible breakpoints
+  
+* [Twig.js](https://github.com/twigjs/twig.js)
+
+  As a templating engine
+
+* [Sass](http://sass-lang.com/)
+
+  As a CSS preprocessor
+
 * [Autoprefixer](https://www.npmjs.org/package/gulp-autoprefixer)
+
+  Parse CSS and add vendor prefixes to rules by Can I Use
+
 * [Browsersync](https://www.browsersync.io/)
+
+  Time-saving synchronised browser testing
+
 
 ## Installation requirements
 * [Node.js](https://nodejs.org/)
