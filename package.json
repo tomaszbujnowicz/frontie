@@ -1,7 +1,7 @@
 {
   "name": "frontie",
   "version": "1.0.0",
-  "description": "Frontend HTML5 Boilerplate. Frontie is a frontend HTML5 boilerplate using Gulp for task automation.
+  "description": "Front-end HTML5 Boilerplate. Frontie is a front-end HTML5 boilerplate using Gulp for task automation.
   Based on HTML5 Boilerplate and Bootstrap 4 Grid system enhanced with Twig.js, SASS, Autoprefixer plus Browsersync.",
   "main": "gulpfile.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "gulp",
     "npm",
     "browsersync",
-    "frontend development",
+    "front-end development",
     "sass",
     "boilerplate",
     "html5 boilerplate",
