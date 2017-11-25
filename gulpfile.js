@@ -58,7 +58,7 @@ gulp.task('css-watch',['css'],browserSync.reload)
 
 // JS Vendor
 gulp.task('js-vendor', function() {
-  return gulp.src(paths.src + 'js/vendor/*.js')
+  return gulp.src(paths.src + 'js/vendor/**/*.js')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(concat('vendor.js'))
     .pipe(uglify())
@@ -115,13 +115,21 @@ gulp.task('twig',function(){
 gulp.task('twig-watch',['twig'],browserSync.reload);
 
 // Watch
-gulp.task('watch', function() {
+gulp.task('gulp-watch', function() {
   gulp.watch(paths.src + '*.html', ['html-watch']);
   gulp.watch(paths.src + 'img/**/*', ['images-watch']);
   gulp.watch(paths.src + 'sass/**/*.scss', ['css-watch']);
   gulp.watch(paths.src + 'js/main.js', ['js-main-watch']);
   gulp.watch(paths.src + 'js/vendor/**/*.js', ['js-vendor-watch']);
   gulp.watch(paths.src + 'templates/**/*.twig', ['twig-watch']);
+});
+
+// Default
+gulp.task('default', function(done) {
+  runSequence('build',
+    ['gulp-watch', 'browser-sync'],
+    done
+  )
 });
 
 // Build
@@ -132,10 +140,10 @@ gulp.task('build', function (done) {
   )
 })
 
-// Default
-gulp.task('default', function(done) {
-  runSequence('build',
-    ['watch', 'browser-sync'],
+// Watch
+gulp.task('watch', function(done) {
+  runSequence('gulp-watch',
+    ['browser-sync'],
     done
   )
 });
