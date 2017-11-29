@@ -57,12 +57,24 @@ gulp build
 ```
 
 ## Working Directories
-* All the files that you will be working with can be found at /src
-* Production files can be found at /dist
-* CSS: The main file is located at /sass/main.scss
-* JS: The main file is located at /js/main.js
-* JS: Third party JS libraries can be placed at /js/vendor
-* Twig: templates are located at /templates
+
+* Source  
+  All the files that you will be working with can be found at /src
+
+* Production  
+  Production files can be found at /dist
+
+* CSS  
+  The main file is located at /sass/main.scss
+
+* JS  
+  The main file is located at /js/main.js
+
+* JS  
+  Third party JS libraries can be placed at /js/vendor
+  
+* Twig  
+  Templates are located at /templates
 
 ## Notes
 
