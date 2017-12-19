@@ -33,7 +33,8 @@ gulp.task('browser-sync', function() {
   browserSync.init(null, {
     server: {
       baseDir: './dist'
-    }
+    },
+    notify: false
   });
 });
 gulp.task('bs-reload', function () {
