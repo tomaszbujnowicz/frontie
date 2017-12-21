@@ -30,6 +30,9 @@ These tools make it a solid front-end boilerplate to get a new project off the g
 * [Browsersync](https://www.browsersync.io/)  
   Time-saving synchronised browser testing
 
+* [Github pages](https://www.npmjs.com/package/gulp-gh-pages)  
+  Gulp plugin to publish contents to Github pages
+
 ## Installation requirements
 * [Node.js](https://nodejs.org/)
 * [Gulp](http://gulpjs.com/)
@@ -56,6 +59,11 @@ gulp watch
 gulp build
 ```
 
+**Publish contents from /dist folder to Github pages:**
+```sh
+gulp deploy
+```
+
 ## Working Directories
 
 * Source  
@@ -72,7 +80,7 @@ gulp build
 
 * JS  
   Third party JS libraries can be placed at /js/vendor
-  
+
 * Twig  
   Templates are located at /templates
 
