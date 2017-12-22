@@ -40,11 +40,11 @@ These tools make it a solid front-end boilerplate to get a new project off the g
 ## Quick start: Installation
 **Download all the project dependencies:**
 ```sh
-npm install
+npm install / yarn
 ```
 
 ## Development: Tasks
-**Watch and develop:**
+**Build and watch:**
 ```sh
 gulp
 ```
