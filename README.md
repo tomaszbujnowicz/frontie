@@ -33,7 +33,7 @@ These tools make it a solid front-end boilerplate to get a new project off the g
 * [Github pages](https://www.npmjs.com/package/gulp-gh-pages)  
   Gulp plugin to publish contents to Github pages
 
-* [Source Maps] (https://www.npmjs.com/package/gulp-sourcemaps)
+* [Source Maps](https://www.npmjs.com/package/gulp-sourcemaps)
 
 ## Installation requirements
 * [Node.js](https://nodejs.org/)
