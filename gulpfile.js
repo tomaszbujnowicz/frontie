@@ -13,7 +13,8 @@ var gulp = require('gulp'),
     del = require ('del'),
     twig = require('gulp-twig'),
     foreach = require('gulp-foreach'),
-    ghPages = require('gulp-gh-pages');
+    ghPages = require('gulp-gh-pages'),
+    sourcemaps = require('gulp-sourcemaps');
 
 // Paths
 var paths = {
@@ -51,9 +52,11 @@ gulp.task('clean:dist', function() {
 gulp.task('css', function () {
   return gulp.src(paths.src + 'sass/main.scss')
     .pipe(plumber({ errorHandler: onError }))
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer('last 2 version'))
     .pipe(clean())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dist + 'css'));
 });
 gulp.task('css-watch',['css'],browserSync.reload)
@@ -62,8 +65,10 @@ gulp.task('css-watch',['css'],browserSync.reload)
 gulp.task('js-vendor', function() {
   return gulp.src(paths.src + 'js/vendor/**/*.js')
     .pipe(plumber({ errorHandler: onError }))
+    .pipe(sourcemaps.init())
     .pipe(concat('vendor.js'))
     .pipe(uglify())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dist + 'js'));
 });
 gulp.task('js-vendor-watch',['js-vendor'],browserSync.reload)
@@ -72,8 +77,10 @@ gulp.task('js-vendor-watch',['js-vendor'],browserSync.reload)
 gulp.task('js-main',function(){
   return gulp.src(paths.src + 'js/main.js')
     .pipe(plumber({ errorHandler: onError }))
+    .pipe(sourcemaps.init())
     .pipe(concat('main.min.js'))
     .pipe(uglify())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dist + 'js'));
 });
 gulp.task('js-main-watch',['js-main'],browserSync.reload)
