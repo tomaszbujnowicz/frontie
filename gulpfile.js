@@ -2,7 +2,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    clean = require('gulp-clean'),
+    cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
@@ -55,7 +55,7 @@ gulp.task('css', function () {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer('last 2 version'))
-    .pipe(clean())
+    .pipe(cleanCSS())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dist + 'css'));
 });
