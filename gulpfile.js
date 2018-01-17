@@ -1,6 +1,7 @@
 // Global requires
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
+    sassLint = require('gulp-sass-lint'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
@@ -60,6 +61,14 @@ gulp.task('css', function () {
     .pipe(gulp.dest(paths.dist + 'css'));
 });
 gulp.task('css-watch',['css'],browserSync.reload)
+
+// SASS Lint
+gulp.task('sass-lint', function () {
+  return gulp.src(paths.src + 'sass/**/*.s+(a|c)ss')
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+});
 
 // JS Vendor
 gulp.task('js-vendor', function() {
