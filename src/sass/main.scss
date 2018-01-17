@@ -14,9 +14,11 @@
 
 // Mixins
 @import 'mixins/_clearfix';
-@import 'mixins/_pseudo';
-@import 'mixins/_placeholders';
+@import 'mixins/_list-none.scss';
 @import 'mixins/_overlay';
+@import 'mixins/_placeholders';
+@import 'mixins/_pseudo';
+@import 'mixins/_pxtorem.scss';
 
 /* ==========================================================================
    Variables
@@ -27,6 +29,9 @@ $font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Text Color
 $text-color: #222;
+
+// Text size
+$text-size: 16px;
 
 // Paragraphs
 $paragraph-margin-bottom: 1rem;
@@ -54,7 +59,7 @@ $transition-base: all .2s ease-in-out;
 html {
   font-family: $font-family;
   color: $text-color;
-  font-size: 1rem;
+  font-size: rem($text-size);
   line-height: 1.4;
 }
 
