@@ -58,8 +58,8 @@ $transition-base: all .2s ease-in-out;
 
 html {
   font-family: $font-family;
-  color: $text-color;
   font-size: rem($text-size);
+  color: $text-color;
   line-height: 1.4;
 }
 

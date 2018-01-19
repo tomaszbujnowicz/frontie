@@ -3,7 +3,6 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sassLint = require('gulp-sass-lint'),
     autoprefixer = require('gulp-autoprefixer'),
-    cleanCSS = require('gulp-clean-css'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
@@ -54,10 +53,9 @@ gulp.task('css', function () {
   return gulp.src(paths.src + 'sass/main.scss')
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(autoprefixer('last 2 version'))
-    .pipe(cleanCSS())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dist + 'css'));
 });
 gulp.task('css-watch',['css'],browserSync.reload)
@@ -77,7 +75,7 @@ gulp.task('js-vendor', function() {
     .pipe(sourcemaps.init())
     .pipe(concat('vendor.js'))
     .pipe(uglify())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dist + 'js'));
 });
 gulp.task('js-vendor-watch',['js-vendor'],browserSync.reload)
@@ -89,7 +87,7 @@ gulp.task('js-main',function(){
     .pipe(sourcemaps.init())
     .pipe(concat('main.min.js'))
     .pipe(uglify())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.dist + 'js'));
 });
 gulp.task('js-main-watch',['js-main'],browserSync.reload)
