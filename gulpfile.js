@@ -96,7 +96,8 @@ gulp.task('images', function() {
   ], {
     'dot': true // include hidden files
   })
-    .pipe(gulp.dest(paths.dist + 'img'));
+    .pipe(gulp.dest(paths.dist + 'img'))
+    .pipe(browserSync.reload({stream:true}));
 });
 
 // Twig
