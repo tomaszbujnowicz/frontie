@@ -14,7 +14,8 @@ var gulp = require('gulp'),
     twig = require('gulp-twig'),
     foreach = require('gulp-foreach'),
     ghPages = require('gulp-gh-pages'),
-    sourcemaps = require('gulp-sourcemaps');
+    sourcemaps = require('gulp-sourcemaps'),
+    changed = require('gulp-changed');
 
 // Paths
 var paths = {
@@ -96,6 +97,7 @@ gulp.task('images', function() {
   ], {
     'dot': true // include hidden files
   })
+    .pipe(changed(paths.dist + 'img'))
     .pipe(gulp.dest(paths.dist + 'img'))
     .pipe(browserSync.reload({stream:true}));
 });
@@ -116,6 +118,7 @@ gulp.task('twig',function(){
       return stream
         .pipe(twig({}))
     }))
+    .pipe(changed(paths.dist))
     .pipe(gulp.dest(paths.dist));
 });
 
@@ -125,6 +128,7 @@ gulp.task('copy:misc', function() {
     paths.src + '*.xml',
     paths.src + '*.txt'
   ])
+    .pipe(changed(paths.dist))
     .pipe(gulp.dest(paths.dist))
     .pipe(browserSync.reload({stream:true}));
 });
