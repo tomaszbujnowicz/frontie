@@ -1,7 +1,7 @@
 /*!
- * Bootstrap Grid v4.0.0-beta.2 (https://getbootstrap.com)
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
+ * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
@@ -41,6 +41,7 @@ $grid-breakpoints: (
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 @include _assert-starts-at-zero($grid-breakpoints);
 
+
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
@@ -54,21 +55,19 @@ $container-max-widths: (
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
+
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
-$enable-grid-classes:         true !default;
-
-//
-// Grid mixins
-//
+$enable-grid-classes:       true !default;
 
 @import "mixins/breakpoints";
 @import "mixins/grid-framework";
 @import "mixins/grid";
 
 @import "grid";
+@import "utilities/display";
 @import "utilities/flex";
