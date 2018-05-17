@@ -64,10 +64,8 @@ var onError = function (err) {
 
 // Browser Sync
 gulp.task('browser-sync', function() {
-  var files = [
-    'dist/*.html'
-   ];
-  browserSync.init(files, {
+  browserSync.init(null, {
+    files: [paths.html],
     server: {
       baseDir: paths.browserSync
     },
