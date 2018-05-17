@@ -64,7 +64,10 @@ var onError = function (err) {
 
 // Browser Sync
 gulp.task('browser-sync', function() {
-  browserSync.init(null, {
+  var files = [
+    'dist/*.html'
+   ];
+  browserSync.init(files, {
     server: {
       baseDir: paths.browserSync
     },
@@ -173,7 +176,6 @@ gulp.task('gulp-watch', function() {
   gulp.watch(paths.jsVendor.input, ['js:vendor']);
   gulp.watch(paths.twig.inputAll, ['twig']);
   gulp.watch([paths.misc.xml, paths.misc.txt], ['copy:misc']);
-  gulp.watch(paths.html).on('change', browserSync.reload);
 });
 
 // Default
