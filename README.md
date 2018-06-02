@@ -1,7 +1,7 @@
 # Frontie - Front-end Boilerplate
 
-Frontie is a front-end boilerplate using Gulp for task automation.
-Based on normalize.css, Bootstrap 4 Grid & Responsive breakpoints enhanced with Twig.js, SASS, Autoprefixer and Browsersync.
+Frontie is a front-end boilerplate using Gulp for task automation.  
+Based on normalize.css, Bootstrap 4 Grid & Responsive breakpoints enhanced with Twig.js, SASS, Autoprefixer and Browsersync.  
 These tools make it a solid front-end boilerplate to get a new project off the ground.
 
 ## Core features
@@ -87,7 +87,9 @@ gulp deploy
 
 ### Why don't you include everything from Bootstrap 4?
 
-It's a really great front-end framework for many projects but in some cases it might be just too large and complex. I only took what I needed from it which is grid system and responsive breakpoints. If you need more stuff then you can easily import it.
+It's a really great front-end framework for many projects but in some cases it might be just too large and complex.  
+I only took what I needed from it which is a grid system and responsive breakpoints.  
+If you need more stuff then you can easily import it or you dedicated version [Frontie Bootstrap 4](https://github.com/tomaszbujnowicz/frontie-bootstrap4)
 
 ## Copyright and license
 
