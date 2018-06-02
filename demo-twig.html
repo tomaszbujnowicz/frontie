@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Frontie</title>
+    <title>Example</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="canonical" href="index.html" />
+    <link rel="canonical" href="example.html" />
 
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -21,62 +21,40 @@
     <![endif]-->
 
     
-  <style>
-    body {
-      background-color: #f5f5f5;
-      padding: 4rem 2rem;
-    }
-    .demo {
-      background-color: white;
-      border: 1px solid #eee;
-      max-width: 680px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 2rem;
-    }
-    .demo-title {
-      font-size: 2.5rem;
-    }
-    .demo-subtitle {
-      color: #777;
-      font-size: 1rem;
-    }
-    .demo-list {
-      list-style: none;
-      padding-left: 0;
-      margin-bottom: 0;
-      font-size: 1.125rem;
-    }
-    .demo-list li {
-      display: block;
-      padding: .75rem 1.25rem;
-      border-bottom: 1px solid #eee;
-    }
-    .demo-list li:last-child {
-      border-bottom: none;
-    }
-  </style>
+  <div class="container">
 
-  <div class="demo">
-    <h1 class="demo-title">
-      Project Name
-    </h1>
-    <p class="demo-subtitle">
-      This is the demo index page with basic styles for listing all of your pages.
-      <br>
-      Tip: can be useful when showing the site preview to a client.
+    <h1>Demo twig</h1>
+    <p>
+      This is the demo page with useful Twig functions
     </p>
-    <ul class="demo-list">
-      <li>
-        <a href="#">Sample Page 1</a>
-      </li>
-      <li>
-        <a href="#">Sample Page 2</a>
-      </li>
-      <li>
-        <a href="#">Sample Page 3</a>
-      </li>
-    </ul>
+
+    <hr>
+
+    <p>
+      Let's loop over item in a sequence using twig "for" function
+    </p>
+
+        <p>For Item: 0</p>
+        <p>For Item: 1</p>
+        <p>For Item: 2</p>
+        <p>For Item: 3</p>
+    
+    <hr>
+
+    <p>
+      Include component / partial
+    </p>
+
+    
+    
+    <hr>
+
+    <p>
+      Include component / partial with variable
+    </p>
+
+      foo: bar
+
   </div>
 
 
