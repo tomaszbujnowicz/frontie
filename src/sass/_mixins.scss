@@ -1,7 +1,8 @@
-/*
- Usage:
- @include clearfix;
-*/
+/**
+ * Clearfix
+ * Usage:
+   @include clearfix;
+ */
 
 @mixin clearfix() {
  &::after {
@@ -11,21 +12,22 @@
  }
 }
 
-/*
-  Unstyled keeps list items block level, just removes default browser padding and list-style.
-  Usage:
-  @include list-none;
-*/
+/**
+ * Unstyled keeps list items block level, just removes default browser padding and list-style.
+ * Usage:
+   @include list-none;
+ */
 
 @mixin list-none {
   list-style: none;
   padding-left: 0;
 }
 
-/*
-  Usage:
-  @include overlay();
-*/
+/**
+ * Overlay
+ * Usage
+   @include overlay();
+ */
 
 @mixin overlay() {
   position: absolute;
@@ -35,14 +37,15 @@
   left: 0;
 }
 
-/*
-  Usage:
-  input {
-    @include input-placeholder {
-      color: $grey;
-    }
-  }
-*/
+/**
+ * Inut Placeholder
+ * Usage:
+   input {
+     @include input-placeholder {
+       color: $grey;
+     }
+   }
+ */
 
 @mixin input-placeholder {
   &.placeholder { @content; }
@@ -52,10 +55,11 @@
   &::-webkit-input-placeholder { @content; }
 }
 
-/*
-  Usage:
-  @include pseudo;
-*/
+/**
+ * Pseudo elements after / before
+ * Usage
+   @include pseudo;
+ */
 
 @mixin pseudo($display: block, $position: absolute, $content: ''){
   content: $content;
