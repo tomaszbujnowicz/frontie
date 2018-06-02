@@ -83,6 +83,14 @@ gulp deploy
 * Twig  
   Templates are located at /templates
 
+## Components
+
+There are also some default Frontie components (styling and JS functionality) included in the package.  
+You can easily remove / comment them in case you don't need them.
+
+* Navbar
+* Button
+
 ## Notes
 
 ### Why don't you include everything from Bootstrap 4?

@@ -34,6 +34,9 @@ var paths = {
     input: 'src/js/vendor/**/*.js',
     output: 'dist/js'
   },
+  jsComponents: {
+    input: 'src/js/components/**/*.js',
+  },
   js: {
     input: 'src/js/main.js',
     output: 'dist/js'
@@ -112,7 +115,10 @@ gulp.task('js:vendor', function() {
 
 // JS Main
 gulp.task('js:main',function(){
-  return gulp.src(paths.js.input)
+  return gulp.src([
+    paths.js.input,
+    paths.jsComponents.input
+  ])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
     .pipe(concat('main.min.js'))
@@ -171,6 +177,7 @@ gulp.task('gulp-watch', function() {
   gulp.watch(paths.img.input, ['images']);
   gulp.watch(paths.sass.inputAll, ['css']);
   gulp.watch(paths.js.input, ['js:main']);
+  gulp.watch(paths.jsComponents.input, ['js:main']);
   gulp.watch(paths.jsVendor.input, ['js:vendor']);
   gulp.watch(paths.twig.inputAll, ['twig']);
   gulp.watch([paths.misc.xml, paths.misc.txt], ['copy:misc']);
