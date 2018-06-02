@@ -3,91 +3,18 @@
  * Author: Author name
  */
 
-// HTML5 Boilerplate
-@import 'vendor/_normalize';
-@import 'html5bp/_helpers';
-@import 'html5bp/_print';
-@import 'html5bp/_reset';
+@import 'node_modules/normalize.css/normalize';
+@import '_reset';
+@import '_print';
+@import '_mixins';
+@import '_variables';
+@import '_typography';
 
-// Bootstrap 4 Grid & Breakpoints
-@import 'bootstrap/bootstrap-grid';
+/**
+ * Bootstrap 4 Grid & Breakpoints
+ */
+ @import "bootstrap/bootstrap";
 
-// Mixins
-@import 'mixins/_clearfix';
-@import 'mixins/_list-none.scss';
-@import 'mixins/_overlay';
-@import 'mixins/_placeholders';
-@import 'mixins/_pseudo';
-@import 'mixins/_pxtorem.scss';
-
-/* ==========================================================================
-   Variables
-   ========================================================================== */
-
-// Font Family
-$font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-// Text Color
-$text-color: #222;
-
-// Text size
-$text-size: 16px;
-
-// Paragraphs
-$paragraph-margin-bottom: 1rem;
-
-// Headings
-$headings-margin-bottom: 1rem;
-$headings-font-family: $font-family;
-$headings-font-weight: 500;
-$headings-line-height: inherit;
-$headings-color: inherit;
-
-// Links
-$link-color: blue;
-$link-decoration: none;
-$link-hover-color: darken($link-color, 15%);
-$link-hover-decoration: underline;
-
-// Transition
-$transition-base: all .2s ease-in-out;
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-
-html {
-  font-family: $font-family;
-  font-size: rem($text-size);
-  color: $text-color;
-  line-height: 1.4;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: $paragraph-margin-bottom;
-}
-
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-top: 0;
-  margin-bottom: $headings-margin-bottom;
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
-  color: $headings-color;
-}
-
-a {
-  color: $link-color;
-  text-decoration: $link-decoration;
-  background-color: transparent; // Remove the gray background on active links in IE 10.
-  &:hover {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
-  }
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/**
+ * Author's custom styles
+ */

@@ -1,7 +1,7 @@
-# Frontie - Front-end HTML5 Boilerplate
+# Frontie - Front-end Boilerplate
 
-Frontie is a front-end HTML5 boilerplate using Gulp for task automation.
-Based on HTML5 Boilerplate and Bootstrap 4 Grid system enhanced with Twig.js, SASS, Autoprefixer plus Browsersync.
+Frontie is a front-end boilerplate using Gulp for task automation.
+Based on normalize.css, Bootstrap 4 Grid & Responsive breakpoints enhanced with Twig.js, SASS, Autoprefixer and Browsersync.
 These tools make it a solid front-end boilerplate to get a new project off the ground.
 
 ## Core features
@@ -9,13 +9,10 @@ These tools make it a solid front-end boilerplate to get a new project off the g
 * [Gulp](http://gulpjs.com/)  
   For task automation
 
-* [HTML5 Boilerplate](https://html5boilerplate.com/)  
-  The web’s most popular front-end template
-
-* [Bootstrap 4 Grid System](http://getbootstrap.com/docs/4.0/layout/grid/)  
+* [Bootstrap 4 Grid System](https://getbootstrap.com/docs/4.1/layout/grid/)  
   Powerful mobile-first flexbox grid to build layouts of all shapes and sizes
 
-* [Bootstrap 4 Responsive Breakpoints](http://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints)  
+* [Bootstrap 4 Responsive Breakpoints](https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints)  
   Media queries to create sensible breakpoints
 
 * [Twig.js](https://github.com/twigjs/twig.js)  
@@ -94,4 +91,4 @@ It's a really great front-end framework for many projects but in some cases it m
 
 ## Copyright and license
 
-Copyright 2017 Tomasz Bujnowicz under the [MIT license](http://opensource.org/licenses/MIT).
+Copyright 2018 Tomasz Bujnowicz under the [MIT license](http://opensource.org/licenses/MIT).

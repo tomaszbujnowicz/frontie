@@ -1,5 +1,16 @@
+/*
+  http://getbootstrap.com/docs/4.1/getting-started/theming/
+
+  Import bootstrap-grid.scss
+
+  The only change comparing to the original structure is that we don't import whole "variables.scss" from Bootstrap (since we don't need these variables anyway).
+  We just define variables needed for the Grids and Breakpoints.
+
+  We comment // @import "variables"; and define Grids and Breakpoints variables directly here
+*/
+
 /*!
- * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
+ * Bootstrap Grid v4.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -20,11 +31,9 @@ html {
   box-sizing: inherit;
 }
 
-@import "functions";
+@import "node_modules/bootstrap/scss/functions";
 
 // @import "variables";
-// Move variables here instead
-
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,
@@ -41,7 +50,6 @@ $grid-breakpoints: (
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 @include _assert-starts-at-zero($grid-breakpoints);
 
-
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
@@ -55,19 +63,18 @@ $container-max-widths: (
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
-
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
-$enable-grid-classes:       true !default;
+$enable-grid-classes:         true !default;
 
-@import "mixins/breakpoints";
-@import "mixins/grid-framework";
-@import "mixins/grid";
+@import "node_modules/bootstrap/scss/mixins/breakpoints";
+@import "node_modules/bootstrap/scss/mixins/grid-framework";
+@import "node_modules/bootstrap/scss/mixins/grid";
 
-@import "grid";
-@import "utilities/display";
-@import "utilities/flex";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/utilities/display";
+@import "node_modules/bootstrap/scss/utilities/flex";

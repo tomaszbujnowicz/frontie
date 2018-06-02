@@ -1,7 +1,7 @@
 {
   "name": "frontie",
-  "version": "1.0.0",
-  "description": "Front-end HTML5 Boilerplate. Frontie is a front-end HTML5 boilerplate using Gulp for task automation. Based on HTML5 Boilerplate and Bootstrap 4 Grid system enhanced with Twig.js, SASS, Autoprefixer plus Browsersync.",
+  "version": "1.1.0",
+  "description": "Front-end Boilerplate. Frontie is a front-end boilerplate using Gulp for task automation. Based on normalize.css, Bootstrap 4 Grid & Responsive breakpoints enhanced with Twig.js, SASS, Autoprefixer and Browsersync.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,11 +13,11 @@
   "keywords": [
     "gulp",
     "npm",
+    "front-end boilerplate",
     "browsersync",
     "front-end development",
     "sass",
     "boilerplate",
-    "html5 boilerplate",
     "bootstrap grid",
     "twig.js"
   ],
@@ -32,8 +32,9 @@
   },
   "homepage": "https://github.com/tomaszbujnowicz/frontie#readme",
   "devDependencies": {
+    "bootstrap": "^4.1.1",
     "browser-sync": "^2.24.4",
-    "css-clean": "^1.7.1",
+    "css-clean": "^2.2.5",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
@@ -48,6 +49,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-twig": "^1.2.0",
     "gulp-uglify": "^3.0.0",
+    "normalize.css": "^8.0.0",
     "run-sequence": "^2.2.1"
   }
 }

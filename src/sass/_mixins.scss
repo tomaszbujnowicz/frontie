@@ -1,0 +1,64 @@
+/*
+ Usage:
+ @include clearfix;
+*/
+
+@mixin clearfix() {
+ &::after {
+   display: block;
+   clear: both;
+   content: "";
+ }
+}
+
+/*
+  Unstyled keeps list items block level, just removes default browser padding and list-style.
+  Usage:
+  @include list-none;
+*/
+
+@mixin list-none {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*
+  Usage:
+  @include overlay();
+*/
+
+@mixin overlay() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*
+  Usage:
+  input {
+    @include input-placeholder {
+      color: $grey;
+    }
+  }
+*/
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+/*
+  Usage:
+  @include pseudo;
+*/
+
+@mixin pseudo($display: block, $position: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $position;
+}
