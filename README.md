@@ -89,7 +89,7 @@ gulp deploy
 
 It's a really great front-end framework for many projects but in some cases it might be just too large and complex.  
 I only took what I needed from it which is a grid system and responsive breakpoints.  
-If you need more stuff then you can easily import it or you dedicated version [Frontie Bootstrap 4](https://github.com/tomaszbujnowicz/frontie-bootstrap4)
+If you need more stuff then you can easily import it or use dedicated version [Frontie Bootstrap 4](https://github.com/tomaszbujnowicz/frontie-bootstrap4)
 
 ## Copyright and license
 
