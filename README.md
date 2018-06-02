@@ -1,7 +1,7 @@
 # Frontie - Front-end Boilerplate
 
 Frontie is a front-end boilerplate using Gulp for task automation.  
-Based on normalize.css, Bootstrap 4 Grid & Responsive breakpoints enhanced with Twig.js, SASS, Autoprefixer and Browsersync.  
+Based on normalize.css, Bootstrap 4 Grid & Responsive breakpoints and enhanced with Twig.js, SASS, Autoprefixer plus Browsersync.  
 These tools make it a solid front-end boilerplate to get a new project off the ground.
 
 ## Core features
@@ -86,7 +86,7 @@ gulp deploy
 ## Components
 
 There are also some default Frontie components (styling and JS functionality) included in the package.  
-You can easily remove / comment them in case you don't need them.
+You can easily remove / comment them out in case you don't need them.
 
 * Navbar
 * Button

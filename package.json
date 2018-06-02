@@ -1,7 +1,7 @@
 {
   "name": "frontie",
   "version": "1.1.0",
-  "description": "Front-end Boilerplate. Frontie is a front-end boilerplate using Gulp for task automation. Based on normalize.css, Bootstrap 4 Grid & Responsive breakpoints enhanced with Twig.js, SASS, Autoprefixer and Browsersync.",
+  "description": "Front-end Boilerplate. Frontie is a front-end boilerplate using Gulp for task automation. Based on normalize.css, Bootstrap 4 Grid & Responsive breakpoints and enhanced with Twig.js, SASS, Autoprefixer plus Browsersync.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
