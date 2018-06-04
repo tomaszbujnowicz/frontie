@@ -1,7 +1,9 @@
 # Frontie - Front-end Boilerplate
 
-Frontie is a front-end boilerplate using Gulp for task automation.  
-Based on normalize.css, Bootstrap 4 Grid & Responsive breakpoints and enhanced with Twig.js, SASS, Autoprefixer plus Browsersync.  
+**Frontie is a front-end boilerplate using Gulp for task automation.**
+
+Based on normalize.css, Bootstrap 4 Grid & Responsive breakpoints and enhanced with Twig.js, Sass, Autoprefixer plus Browsersync.  
+
 These tools make it a solid front-end boilerplate to get a new project off the ground.
 
 ## Core features
@@ -32,28 +34,35 @@ These tools make it a solid front-end boilerplate to get a new project off the g
 
 * [Source Maps](https://www.npmjs.com/package/gulp-sourcemaps)
 
-## Installation requirements
-* [Node.js](https://nodejs.org/)
+## Usage
+
+### Installation requirements
+* [npm](https://www.npmjs.com/get-npm) or [yarn](https://yarnpkg.com/lang/en/)
+* [Node.js](https://nodejs.org/en/download/)
 * [Gulp](http://gulpjs.com/)
 
-## Quick start: Installation
-**Download all the project dependencies:**
+### Quick start: Installation
+**Clone this repository and run**
 ```sh
-npm install / yarn
+npm install or yarn
 ```
 
-## Development: Tasks
-**Build and watch:**
+This will take some time and will install all packages necessary to run Frontie and its tasks.
+
+### Development
+**While developing your website:**
 ```sh
 gulp
 ```
+
+Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets, assets or content changes.
 
 **Watch:**
 ```sh
 gulp watch
 ```
 
-**Generate a fresh build of your project to /dist folder:**
+**To build a static version of the website inside the /dist folder**
 ```sh
 gulp build
 ```
@@ -63,25 +72,24 @@ gulp build
 gulp deploy
 ```
 
-## Working Directories
+## Structure
 
-* Source  
-  All the files that you will be working with can be found at /src
-
-* Production  
-  Production files can be found at /dist
-
-* CSS  
-  The main file is located at /sass/main.scss
-
-* JS  
-  The main file is located at /js/main.js
-
-* JS  
-  Third party JS libraries can be placed at /js/vendor
-
-* Twig  
-  Templates are located at /templates
+```
+|--dist                  // Production files / static version of the website ready to upload
+|--src                   // Source files / development files
+|  |--img                // There is where all images go
+|  |--css                // CSS files in the root of this folder will end up in /dist/css/main.css
+|  |--js                 // JS files will be compiled to /dist/js/main.min.js (main.js + /components/.*) and /dist/vendor.js (/vendor/.*)
+|  |  |--components      // This is where all components JS files should be placed
+|  |  |--vendor          // This is where third party JS libraries should be placed
+|  |  |--main.js         // There is where all custom scripts should go
+|  |--templates          // This is where all templates go
+|  |  |--components      // This is where components includes live
+|  |  |--layouts         // Base layout templates (you can have multiple)
+|  |  |--partials        // This is where partials includes live
+|  |  |--components.twig // The components page - just for a demo purpose
+|  |  |--index.twig      // The index page
+```
 
 ## Components
 

@@ -93,7 +93,7 @@ gulp.task('css', function () {
     .pipe(browserSync.reload({stream:true}));
 });
 
-// SASS Lint
+// Sass Lint
 gulp.task('sass-lint', function () {
   return gulp.src(paths.sass.lint)
     .pipe(sassLint())
