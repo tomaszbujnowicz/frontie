@@ -36,8 +36,7 @@ Make sure all dependencies have been installed before moving on:
 
 ### Quick start: Installation
 Clone this repository and run
-
-`npm install` or `yarn` to install dependencies
+- `npm install` or `yarn` to install dependencies
 
 This will take some time and will install all packages necessary to run Frontie and its tasks.
 
