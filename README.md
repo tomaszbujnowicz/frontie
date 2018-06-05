@@ -36,17 +36,13 @@ Make sure all dependencies have been installed before moving on:
 
 ### Quick start: Installation
 Clone this repository and run
-```sh
-npm install or yarn
-```
+
+`npm install` or `yarn` to install dependencies
 
 This will take some time and will install all packages necessary to run Frontie and its tasks.
 
 ### Development
-**While developing your website:**
-```sh
-gulp
-```
+- `gulp` to build a static version of the website, compile assets and templates when file changes are made and start Browsersync session
 
 Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets, assets or content changes.
 
