@@ -7,24 +7,23 @@ These tools make it a solid front-end boilerplate to get a new project off the g
 
 ## Features
 
-* [Gulp](http://gulpjs.com/) For task automation
+* [Gulp](http://gulpjs.com/) for task automation
 
-* [Bootstrap 4 Grid System](https://getbootstrap.com/docs/4.1/layout/grid/) Powerful mobile-first flexbox grid to build layouts of all shapes and sizes
+* [Bootstrap 4 Grid System](https://getbootstrap.com/docs/4.1/layout/grid/) as a powerful mobile-first flexbox grid to build layouts of all shapes and sizes
 
-* [Bootstrap 4 Responsive Breakpoints](https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints) Media queries to create sensible breakpoints
+* [Bootstrap 4 Responsive Breakpoints](https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints) as a media queries to create sensible breakpoints
 
-* [Twig.js](https://github.com/twigjs/twig.js) Templating engine
+* [Twig.js](https://github.com/twigjs/twig.js) as a templating engine
 
-* [Sass](http://sass-lang.com/) CSS preprocessor
+* [Sass](http://sass-lang.com/) as a CSS preprocessor
 
-* [Autoprefixer](https://www.npmjs.org/package/gulp-autoprefixer)  
-  Parse CSS and add vendor prefixes to rules by Can I Use
+* [Autoprefixer](https://www.npmjs.org/package/gulp-autoprefixer) for parsing CSS and add vendor prefixes to rules by Can I Use
 
-* [Browsersync](https://www.browsersync.io/) Time-saving synchronised browser testing
+* [Browsersync](https://www.browsersync.io/) for time-saving synchronised browser testing
 
-* [Github pages](https://www.npmjs.com/package/gulp-gh-pages) Publish contents to Github pages
+* [Github pages](https://www.npmjs.com/package/gulp-gh-pages) for publishing contents to Github pages
 
-* [Source Maps](https://www.npmjs.com/package/gulp-sourcemaps) CSS / JS Source Maps
+* [Source Maps](https://www.npmjs.com/package/gulp-sourcemaps)
 
 ## Usage
 
@@ -53,9 +52,9 @@ Then visit http://localhost:3000/ *- or a new browser windows popped-up already 
 
 **There are other tasks available including:**
 
-- `gulp watch` - watch without building dist from scratch
-- `gulp build` - To build a static version of the website inside the /dist folder
-- `gulp deploy` - Publish contents from /dist folder to Github pages
+- `gulp watch` to watch without building /dist (production files) from scratch
+- `gulp build` to build a static version of the website inside the /dist folder
+- `gulp deploy` to publish contents from /dist folder to Github pages
 
 ## Structure
 
@@ -97,7 +96,7 @@ You can easily remove / comment them out in case you don't need them.
 
 It's a really great front-end framework for many projects but in some cases it might be just too large and complex.  
 I only took what I needed from it which is a grid system and responsive breakpoints.  
-If you need more stuff then you can easily import it or use dedicated version [Frontie Bootstrap 4](https://github.com/tomaszbujnowicz/frontie-bootstrap4)
+If you need more stuff then you can easily import required components or use a dedicated version [Frontie Bootstrap 4](https://github.com/tomaszbujnowicz/frontie-bootstrap4)
 
 ## Copyright and license
 
