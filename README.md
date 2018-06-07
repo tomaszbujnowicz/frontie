@@ -41,7 +41,7 @@ Clone this repository and run
 This will take some time and will install all packages necessary to run Frontie and its tasks.
 
 ### Development
-- `gulp` to build a static version of the website, compile assets and templates when file changes are made and start Browsersync session
+- `gulp` to start the server (Browsersync session) and watch for changes
 
 Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets, assets or content changes.
 
