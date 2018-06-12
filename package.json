@@ -12,14 +12,14 @@
   },
   "keywords": [
     "gulp",
-    "npm",
+    "frontend",
     "front-end boilerplate",
     "browsersync",
     "front-end development",
     "sass",
     "boilerplate",
     "bootstrap grid",
-    "twig.js"
+    "twig"
   ],
   "author": {
     "name": "Tomasz Bujnowicz",

@@ -93,6 +93,10 @@ It's a really great front-end framework for many projects but in some cases it m
 I only took what I needed from it which is a grid system and responsive breakpoints.  
 If you need more stuff then you can easily import required components or use a dedicated version [Frontie Bootstrap 4](https://github.com/tomaszbujnowicz/frontie-bootstrap4)
 
+## Next Step?
+
+* Upgrade to use Gulp 4, Webpack and Babel or @std/esm
+
 ## Copyright and license
 
 Copyright 2018 Tomasz Bujnowicz under the [MIT license](http://opensource.org/licenses/MIT).
