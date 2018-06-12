@@ -51,7 +51,6 @@
     "gulp-twig": "^1.2.0",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.0",
-    "normalize.css": "^8.0.0",
     "run-sequence": "^2.2.1"
   }
 }
