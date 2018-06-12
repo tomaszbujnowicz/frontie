@@ -1,1 +1,6 @@
+/**
+ * Main
+ * Custom Scripts
+ */
+
 $(function() {})
