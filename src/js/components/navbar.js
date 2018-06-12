@@ -1,3 +1,7 @@
+/**
+ * Navbar
+ */
+
 $(function() {
 
   // Navbar toggler
