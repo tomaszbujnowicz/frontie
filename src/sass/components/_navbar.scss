@@ -11,7 +11,7 @@ $navbar-hover-link-color: darken($primary, 10%);
 .navbar {
 
   background-color: $navbar-bg;
-  z-index: 1;
+  z-index: $z-index-navbar;
 
   &__wrapper {
     display: flex;
@@ -71,7 +71,7 @@ $navbar-hover-link-color: darken($primary, 10%);
       width: 40px;
       height: 32px;
       cursor: pointer;
-      z-index: 2;
+      z-index: $z-index-navbar-toggler;
     }
     &__toggler-line {
       transition: $transition-base;

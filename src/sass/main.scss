@@ -3,18 +3,22 @@
  * Author: Author name
  */
 
+/**
+* Bootstrap 4 Grid & Breakpoints
+*/
+
+@import "bootstrap/bootstrap";
+
+/**
+* Core
+*/
+
 @import '_normalize';
 @import '_reset';
 @import '_print';
 @import '_mixins';
 @import '_variables';
 @import '_typography';
-
-/**
- * Bootstrap 4 Grid & Breakpoints
- */
-
- @import "bootstrap/bootstrap";
 
 /**
  * Frontie Components
