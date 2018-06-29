@@ -33,7 +33,7 @@
   "homepage": "https://github.com/tomaszbujnowicz/frontie#readme",
   "devDependencies": {
     "bootstrap": "^4.1.1",
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.24.5",
     "css-clean": "^2.2.5",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
