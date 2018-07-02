@@ -38,7 +38,6 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-batch": "^1.0.5",
     "gulp-changed": "^3.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-foreach": "^0.1.0",

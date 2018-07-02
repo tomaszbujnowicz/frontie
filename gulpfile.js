@@ -3,7 +3,6 @@
  */
 var gulp           = require('gulp'),
     autoprefixer   = require('gulp-autoprefixer'),
-    batch          = require('gulp-batch'),
     browserSync    = require('browser-sync'),
     changed        = require('gulp-changed'),
     concat         = require('gulp-concat'),
