@@ -32,8 +32,7 @@ $navbar-hover-link-color: darken($primary, 10%);
     margin: 0;
     padding: 0;
   }
-  &__item {
-  }
+  &__item {}
   &__link {
     color: $navbar-link-color;
     &--selected {
@@ -95,13 +94,12 @@ $navbar-hover-link-color: darken($primary, 10%);
       justify-content: center;
       flex-direction: column;
       min-height: 100vh;
-      background-color:  $navbar-bg;
+      background-color: $navbar-bg;
       padding: 2rem 0; // add some top / bottom padding in case there is more items that doesn't fit in the viewport
     }
     &__item {
-      margin-bottom: 1rem;
-      &:last-child {
-        margin-bottom: 0;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
       }
     }
     body.navbar--opened & {
@@ -136,9 +134,8 @@ $navbar-hover-link-color: darken($primary, 10%);
       flex-direction: row;
     }
     &__item {
-      margin-right: 2rem;
-      &:last-child {
-        margin-right: 0;
+      &:not(:last-child) {
+        margin-right: 2rem;
       }
     }
   }
