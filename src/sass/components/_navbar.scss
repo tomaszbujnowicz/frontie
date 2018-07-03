@@ -35,11 +35,9 @@ $navbar-hover-link-color: darken($primary, 10%);
   &__item {}
   &__link {
     color: $navbar-link-color;
-    &--selected {
-      color: $navbar-hover-link-color;
-    }
     &--selected,
     &:hover {
+      color: $navbar-hover-link-color;
       text-decoration: none;
     }
   }
