@@ -1,13 +1,15 @@
-<!--
+{#
   .navbar--fixed
   If navbar shouldn't be fixed,
-  remove the class "navbar--fixed" below and top padding from body in _navbar.scss
+  remove the class "navbar--fixed" below and top padding from body {} in _navbar.scss
+  CSS: /sass/components/_navbar.scss
 
   .js-navbar
-  Make navbar transparent when scrolling more than 100px down
-  We add class ".navbar--scrolled", you can tweak opacity in _navbar.scss
+  Navbar becomes automatically transparent when scrolling more than 100px down
+  We add class "navbar--scrolled" to the "navbar", you can tweak opacity in _navbar.scss
+  CSS: /sass/components/_navbar.scss
   JS: /js/components/navbar.js
--->
+#}
 
 <nav class="navbar navbar--fixed js-navbar">
   <div class="container">
@@ -20,22 +22,35 @@
         <span class="navbar__toggler-line"></span>
         <span class="navbar__toggler-line"></span>
       </button>
+
+      {#
+        In case you want to implement front-end in WordPress, please follow below instructions:
+        Replace everything inside including <div class="navbar__collapse"></div> with the following WordPress Menu code
+        <?php
+          wp_nav_menu( array(
+            'menu_class' => 'menu navbar__menu',
+            'container_class' => 'navbar__collapse'
+          ) );
+        ?>
+      #}
+
       <div class="navbar__collapse">
         <ul class="navbar__menu">
-          <li class="navbar__item ">
-            <a href="#" class="navbar__link navbar__link--selected">Menu Item</a>
+          <li class="menu-item current-menu-item">
+            <a href="#">Menu Item Selected</a>
           </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Menu Item</a>
+          <li class="menu-item">
+            <a href="#">Menu Item</a>
           </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Menu Item</a>
+          <li class="menu-item">
+            <a href="#">Menu Item</a>
           </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Menu Item</a>
+          <li class="menu-item">
+            <a href="#">Menu Item</a>
           </li>
         </ul>
       </div>
+      
     </div>
   </div>
 </nav>

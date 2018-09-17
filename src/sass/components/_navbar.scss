@@ -6,7 +6,7 @@ $navbar-height-desktop: 80px;
 $navbar-height-mobile: 50px;
 $navbar-bg: #fafafa;
 $navbar-link-color: $primary;
-$navbar-hover-link-color: darken($primary, 10%);
+$navbar-hover-link-color: darken($primary, 15%);
 
 .navbar {
 
@@ -17,26 +17,35 @@ $navbar-hover-link-color: darken($primary, 10%);
     display: flex;
     align-items: center;
   }
-  &__brand {}
+  &__brand {
+    &:hover {
+      text-decoration: none;
+    }
+  }
   &__toggler {
     display: none;
     background: none;
     border: none;
     border-radius: 0;
   }
-  &__toggler-line {}
-  &__collapse {}
   &__menu {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  &__item {}
-  &__link {
-    color: $navbar-link-color;
-    &--selected,
-    &:hover {
+  .menu-item {
+    a {
+      transition: $transition-base;
+      color: $navbar-link-color;
+      &:hover {
+        color: $navbar-hover-link-color;
+        text-decoration: none;
+      }
+    }
+  }
+  .current-menu-item {
+    a {
       color: $navbar-hover-link-color;
       text-decoration: none;
     }
@@ -79,7 +88,6 @@ $navbar-hover-link-color: darken($primary, 10%);
       background-color: black;
       height: 1px;
       width: 24px;
-      &:nth-child(1) {}
       &:nth-child(2) {
         top: 16px;
       }
@@ -95,7 +103,7 @@ $navbar-hover-link-color: darken($primary, 10%);
       background-color: $navbar-bg;
       padding: 2rem 0; // add some top / bottom padding in case there is more items that doesn't fit in the viewport
     }
-    &__item {
+    .menu-item {
       &:not(:last-child) {
         margin-bottom: 1rem;
       }
@@ -131,7 +139,7 @@ $navbar-hover-link-color: darken($primary, 10%);
     &__menu {
       flex-direction: row;
     }
-    &__item {
+    .menu-item {
       &:not(:last-child) {
         margin-right: 2rem;
       }
