@@ -27,6 +27,9 @@ $navbar-hover-link-color: darken($primary, 15%);
     background: none;
     border: none;
     border-radius: 0;
+    &:focus {
+      outline: none;
+    }
   }
   &__menu {
     display: flex;
