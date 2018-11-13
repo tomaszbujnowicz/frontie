@@ -103,3 +103,119 @@
   }
   @return ($pxval / $base) * 1rem;
 }
+
+/**
+ * Responsive font size for different media query breakpoints
+ * Usage
+   @include responsive-font-size(12px, 14px, 16px, 18px, 20px);
+   @include responsive-font-size(xs, sm, md, lg, xl);
+ * In case you want to omit the media query breakpoint please use ''
+   e.g. @include responsive-font-size(1rem, '', '', 1.5rem, '', 2.5rem);
+ */
+
+@mixin responsive-font-size($font-size-xs: null, $font-size-sm: null, $font-size-md: null, $font-size-lg: null, $font-size-xl: null) {
+  @if ($font-size-xs != '') {
+    font-size: $font-size;
+  }
+  @if ($font-size-sm != '') {
+    @include media-breakpoint-up(sm) {
+      font-size: $font-size-sm;
+    }
+  }
+  @if ($font-size-md != '') {
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-md;
+    }
+  }
+  @if ($font-size-lg != '') {
+    @include media-breakpoint-up(lg) {
+      font-size: $font-size-lg;
+    }
+  }
+  @if ($font-size-xl != '') {
+    @include media-breakpoint-up(xl) {
+      font-size: $font-size-xl;
+    }
+  }
+}
+
+/**
+ * Responsive spacing for different media query breakpoints
+ * Usage
+   @include responsive-space('mb', 10px, 20px, 30px, 40px, 50px);
+   @include responsive-space('type, xs, sm, md, lg, xl);
+
+ * In case you want to omit the media query breakpoint please use ''
+   e.g. @include responsive-space('mb', 10px, '', '', 40px, 50px);
+
+   type:
+   p  : padding,
+   pt : padding-top,
+   pr : padding-right,
+   pb : padding-bottom,
+   pl : padding-left,
+   m  : margin,
+   mt : margin-top,
+   mr : margin-right,
+   mb : margin-bottom,
+   ml : margin-left
+ */
+
+@mixin responsive-space($type: null, $space-xs: null, $space-sm: null, $space-md: null, $space-lg: null, $space-xl: null) {
+
+  @if ($type == 'p') {
+    $type: 'padding';
+  }
+  @if ($type == 'pt') {
+    $type: 'padding-top';
+  }
+  @if ($type == 'pr') {
+    $type: 'padding-right';
+  }
+  @if ($type == 'pb') {
+    $type: 'padding-bottom';
+  }
+  @if ($type == 'pl') {
+    $type: 'padding-left';
+  }
+
+  @if ($type == 'b') {
+    $type: 'margin';
+  }
+  @if ($type == 'mt') {
+    $type: 'margin-top';
+  }
+  @if ($type == 'mr') {
+    $type: 'margin-right';
+  }
+  @if ($type == 'mb') {
+    $type: 'margin-bottom';
+  }
+  @if ($type == 'ml') {
+    $type: 'margin-left';
+  }
+
+  @if ($space-xs != '') {
+    #{$type}: $space-xs;
+  }
+  @if ($space-sm != '') {
+    @include media-breakpoint-up(sm) {
+      #{$type}: $space-sm;
+    }
+  }
+  @if ($space-md != '') {
+    @include media-breakpoint-up(md) {
+      #{$type}: $space-md;
+    }
+  }
+  @if ($space-lg != '') {
+    @include media-breakpoint-up(lg) {
+      #{$type}: $space-lg;
+    }
+  }
+  @if ($space-xl != '') {
+    @include media-breakpoint-up(xl) {
+      #{$type}: $space-xl;
+    }
+  }
+}
