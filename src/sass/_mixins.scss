@@ -115,7 +115,7 @@
 
 @mixin responsive-font-size($font-size-xs: null, $font-size-sm: null, $font-size-md: null, $font-size-lg: null, $font-size-xl: null) {
   @if ($font-size-xs != '') {
-    font-size: $font-size;
+    font-size: $font-size-xs;
   }
   @if ($font-size-sm != '') {
     @include media-breakpoint-up(sm) {
