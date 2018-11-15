@@ -230,8 +230,12 @@
    e.g. @include responsive-size('h', 10px, '', '', 40px, 50px);
 
    type:
-   h  : height,
-   w : width
+   h    : height,
+   minh : min-height,
+   maxh : max-height,
+   w    : width,
+   minw : min-width,
+   maxw : max-width
  */
 
 @mixin responsive-size($type: null, $size-xs: null, $size-sm: null, $size-md: null, $size-lg: null, $size-xl: null) {
@@ -241,6 +245,18 @@
   }
   @if ($type == 'w') {
     $type: 'width';
+  }
+  @if ($type == 'minh') {
+    $type: 'min-height';
+  }
+  @if ($type == 'minw') {
+    $type: 'min-width';
+  }
+  @if ($type == 'maxh') {
+    $type: 'max-height';
+  }
+  @if ($type == 'maxw') {
+    $type: 'max-width';
   }
 
   @if ($size-xs != '') {
