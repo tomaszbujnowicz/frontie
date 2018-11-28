@@ -51,10 +51,8 @@ var paths = {
     output: 'dist/img'
   },
   twig: {
-    inputAll: 'src/templates/**/*.{twig,html}',
-    inputLayouts: '!src/templates/layouts/**/*.{twig,html}',
-    inputComponents: '!src/templates/components/**/*.{twig,html}',
-    inputPartials: '!src/templates/partials/**/*.{twig,html}'
+    src: 'src/templates/*.{twig,html}',
+    watch: 'src/templates/**/*.{twig,html}'
   },
   misc: {
     xml: 'src/*.xml',
@@ -169,12 +167,7 @@ gulp.task('images', function (done) {
  * Twig
  */
 gulp.task('twig', function (done) {
-  return gulp.src([
-    paths.twig.inputAll,
-    paths.twig.inputLayouts,
-    paths.twig.inputComponents,
-    paths.twig.inputPartials
-  ])
+  return gulp.src(paths.twig.src)
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
@@ -184,7 +177,6 @@ gulp.task('twig', function (done) {
       return stream
         .pipe(twig())
     }))
-    .pipe(changed(paths.dist))
     .pipe(gulp.dest(paths.dist))
     done();
 });
@@ -222,7 +214,7 @@ gulp.task('watch-files', function () {
   watch(paths.jsVendor.input, function () {
     gulp.start('js:vendor');
   });
-  watch(paths.twig.inputAll, function () {
+  watch(paths.twig.watch, function () {
     gulp.start('twig');
   });
   watch([paths.misc.xml, paths.misc.txt], function () {
