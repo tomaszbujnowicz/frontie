@@ -14,6 +14,7 @@ var gulp           = require('gulp'),
     reload         = browserSync.reload,
     runSequence    = require('run-sequence'),
     sass           = require('gulp-sass'),
+    sassGlob       = require('gulp-sass-glob'),
     sassLint       = require('gulp-sass-lint'),
     sourcemaps     = require('gulp-sourcemaps'),
     twig           = require('gulp-twig'),
@@ -97,6 +98,7 @@ gulp.task('css', function (done) {
   return gulp.src(paths.sass.input)
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
+    .pipe(sassGlob())
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(sourcemaps.write('./', {addComment: false}))

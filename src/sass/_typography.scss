@@ -1,32 +1,4 @@
 /**
- * Typography Variables
- */
-
-// Paragraph
-$paragraph-margin-bottom: 1rem;
-
-// Headings
-$headings-margin-bottom: 1rem;
-$headings-font-family: $font-family;
-$headings-font-weight: 500;
-$headings-line-height: inherit;
-$headings-color: inherit;
-
-// Headings Font Size
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
-
-// Links
-$link-color: #007bff;
-$link-decoration: none;
-$link-hover-color: darken($link-color, 15%);
-$link-hover-decoration: underline;
-
-/**
  * Typography
  */
 
@@ -42,8 +14,18 @@ p {
   margin-bottom: $paragraph-margin-bottom;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   margin-top: 0;
   margin-bottom: $headings-margin-bottom;
   font-family: $headings-font-family;
@@ -52,12 +34,30 @@ h1, h2, h3, h4, h5, h6,
   color: $headings-color;
 }
 
-h1, .h1 { font-size: $h1-font-size; }
-h2, .h2 { font-size: $h2-font-size; }
-h3, .h3 { font-size: $h3-font-size; }
-h4, .h4 { font-size: $h4-font-size; }
-h5, .h5 { font-size: $h5-font-size; }
-h6, .h6 { font-size: $h6-font-size; }
+h1,
+.h1 {
+  font-size: $h1-font-size;
+}
+h2,
+.h2 {
+  font-size: $h2-font-size;
+}
+h3,
+.h3 {
+  font-size: $h3-font-size;
+}
+h4,
+.h4 {
+  font-size: $h4-font-size;
+}
+h5,
+.h5 {
+  font-size: $h5-font-size;
+}
+h6,
+.h6 {
+  font-size: $h6-font-size;
+}
 
 a {
   color: $link-color;

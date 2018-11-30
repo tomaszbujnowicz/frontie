@@ -7,7 +7,6 @@
  * Usage:
    @include clearfix;
  */
-
 @mixin clearfix() {
   &::after {
     display: block;
@@ -21,7 +20,6 @@
  * Usage:
    @include list-none;
  */
-
 @mixin list-none {
   list-style: none;
   padding-left: 0;
@@ -32,7 +30,6 @@
  * Usage
    @include overlay();
  */
-
 @mixin overlay() {
   position: absolute;
   top: 0;
@@ -42,29 +39,10 @@
 }
 
 /**
- * Inut Placeholder
- * Usage:
-   input {
-     @include input-placeholder {
-       color: $grey;
-     }
-   }
- */
-
-@mixin input-placeholder {
-  &.placeholder { @content; }
-  &:-moz-placeholder { @content; }
-  &::-moz-placeholder { @content; }
-  &:-ms-input-placeholder { @content; }
-  &::-webkit-input-placeholder { @content; }
-}
-
-/**
  * Pseudo elements after / before
  * Usage
    @include pseudo;
  */
-
 @mixin pseudo($display: block, $position: absolute, $content: ''){
   content: $content;
   display: $display;
@@ -76,7 +54,6 @@
  * Usage
    @include max-width(600px);
  */
-
 @mixin max-width($max-width) {
   max-width: $max-width;
   margin-right: auto;
@@ -89,7 +66,6 @@
   font-size: rem(20)
   margin: rem(40) rem(40);
  */
-
 @function strip-units($value) {
   @return ($value / ($value * 0 + 1));
 }
@@ -113,7 +89,6 @@
  * In case you want to omit the media query breakpoint please use ''
    e.g. @include responsive-font-size(1rem, '', '', 1.5rem, '', 2.5rem);
  */
-
 @mixin responsive-font-size($font-size-xs: null, $font-size-sm: null, $font-size-md: null, $font-size-lg: null, $font-size-xl: null) {
   @if ($font-size-xs != '') {
     font-size: $font-size-xs;
@@ -167,9 +142,7 @@
    px : (horizontal) padding-left and padding-right
    py : (vertical) padding-top and padding bottom
  */
-
 @mixin responsive-space($type: null, $space-xs: null, $space-sm: null, $space-md: null, $space-lg: null, $space-xl: null, $type_1: null, $type_2: null) {
-
   @if ($type == 'm') {
     $type: 'margin';
   }
@@ -272,8 +245,6 @@
       }
     }
   }
-
-
 }
 
 /**
@@ -294,9 +265,7 @@
    minw : min-width,
    maxw : max-width
  */
-
 @mixin responsive-size($type: null, $size-xs: null, $size-sm: null, $size-md: null, $size-lg: null, $size-xl: null) {
-
   @if ($type == 'h') {
     $type: 'height';
   }
@@ -315,7 +284,6 @@
   @if ($type == 'maxw') {
     $type: 'max-width';
   }
-
   @if ($size-xs != '') {
     #{$type}: $size-xs;
   }

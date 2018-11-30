@@ -7,6 +7,8 @@ $navbar-height-mobile: 50px;
 $navbar-bg: #fafafa;
 $navbar-link-color: $primary;
 $navbar-hover-link-color: darken($primary, 15%);
+$z-index-navbar: 1000;
+$z-index-navbar-toggler: 1010;
 
 .navbar {
 

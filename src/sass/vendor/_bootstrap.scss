@@ -1,16 +1,18 @@
-/*
-  http://getbootstrap.com/docs/4.1/getting-started/theming/
+/**
+ * Bootstrap 4.1.3
+ * Via /node_modules + some modifications
 
+  http://getbootstrap.com/docs/4.1/getting-started/theming/
   Import bootstrap-grid.scss
 
-  The only change comparing to the original structure is that we don't import whole "variables.scss" from Bootstrap (since we don't need these variables anyway).
-  We just define variables needed for the Grids and Breakpoints.
+  The only change comparing to the original structure is that we don't import whole "variables.scss" from Bootstrap.
+  We don't all Bootstrap variagbles variables anyway.
 
-  We comment // @import "variables"; and define Grids and Breakpoints variables directly here
+  We comment // @import "variables"; and define Grids and Breakpoints variables directly here.
 */
 
 /*!
- * Bootstrap Grid v4.1.1 (https://getbootstrap.com/)
+ * Bootstrap Grid v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -34,6 +36,7 @@ html {
 @import "node_modules/bootstrap/scss/functions";
 
 // @import "variables";
+
 // Grid breakpoints
 //
 // Define the minimum dimensions at which your layout will change,
@@ -78,3 +81,24 @@ $enable-grid-classes:         true !default;
 @import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/utilities/display";
 @import "node_modules/bootstrap/scss/utilities/flex";
+
+/**
+ * Demo: Bootstrap Media Queries
+ * http://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints
+ */
+
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-down(xs) {}
+@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-only(xs) {}
+@include media-breakpoint-only(sm) {}
+@include media-breakpoint-only(md) {}
+@include media-breakpoint-only(lg) {}
+@include media-breakpoint-only(xl) {}
