@@ -1,3 +1,5 @@
+# There is more up to date boilerplate based on Gulp 4 and Webpack. Please consider using this one instead https://github.com/tomaszbujnowicz/frontie-webpack
+
 # Frontie - Front-end Boilerplate
 
 **Frontie is a front-end boilerplate using Gulp for task automation.**
